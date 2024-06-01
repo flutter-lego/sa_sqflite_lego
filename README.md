@@ -17,4 +17,13 @@ lego add sa_sqflite_lego
 ```
 
 ## Usage
-Usage here
+```dart
+Check check = Check();
+print(check.toMap());
+
+await CheckSqlite().upsert(check);
+
+Check? check2 = await CheckSqlite().get(check.docId);
+
+print(check2?.toMap());
+```

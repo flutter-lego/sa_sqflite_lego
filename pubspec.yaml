@@ -1,7 +1,7 @@
 name: sa_sqflite_lego
 description: "sqflite lego under simple architecture framework."
 #publish_to: 'none'
-#repository: https://github.com/melodysdreamj/lego
+repository: https://github.com/flutter-lego/sa_sqflite_lego
 
 version: 1.0.0
 
