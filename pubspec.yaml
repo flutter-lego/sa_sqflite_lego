@@ -3,7 +3,7 @@ description: "sqflite lego under simple architecture framework."
 #publish_to: 'none'
 repository: https://github.com/flutter-lego/sa_sqflite_lego
 
-version: 1.0.2
+version: 1.0.3
 
 environment:
   sdk: '>=3.3.1 <4.0.0'
@@ -21,7 +21,7 @@ dependencies:
   flutter_screenutil:
   bot_toast:
   sqflite: #@add
-  path:
+  path: #@add
   orange:
 
 dev_dependencies:
