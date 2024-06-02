@@ -33,7 +33,7 @@ dev_dependencies:
   sa_data_class_lego:
   sa_enum_lego:
   orange_lego: #@add
-  widget_binding_lego:
+  widget_binding_lego: #@add
 
 flutter:
   assets:
