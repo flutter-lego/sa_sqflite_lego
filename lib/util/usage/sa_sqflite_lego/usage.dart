@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../app/backend/data_class_example/sub.dart';
+import '../../../app/backend/enum_example/enum_test.dart';
 import '../../../app/backend/sqflite_example/check.dart';
 import '../../../main.dart';
 
@@ -8,19 +10,52 @@ String _noteName = "Note";
 T _button00 = T("00", onTap: (BuildContext context) async {
   ////////////////////////////////////////
   Check check = Check();
+  check.docId = 'example2';
+  check.s000 = "banana";
+  check.i000 = 123;
+  check.b000 = true;
+  check.r000 = 3.14;
+  check.l000 = ["apple", "banana", "cherry"];
+  check.c000 = Sub()..s000 = "apple";
+  check.m000 = {
+    "apple": "red",
+    "banana": "yellow",
+    "cherry": "red",
+    "weight": 78,
+    "height": 174.1,
+    "isStudent": true,
+  };
+  check.t000 = DateTime.now();
+  check.j000 = [
+    Sub()
+      ..s000 = "apple"
+      ..l000 = ["earth", "moon", "sun"],
+    Sub()..s000 = "banana",
+    Sub()..s000 = "cherry"
+  ];
+  check.e000 = EnumTestEnum.p001;
+
   print(check.toMap());
 
   await CheckSqlite().upsert(check);
 
-  Check? check2 = await CheckSqlite().get(check.docId);
 
-  print(check2?.toMap());
 
   ////////////////////////////////////////
 });
 
 T _button01 = T("01", onTap: (BuildContext context) async {
   ////////////////////////////////////////
+
+  Check? check2 = await CheckSqlite().get('example2');
+
+  print(check2?.t000);
+  print(check2?.m000['banana']);
+
+  print(check2?.toMap());
+  print('c000:${check2?.c000.toMap()}');
+  print('j000:${check2?.j000[0].toMap()}');
+  print('j000:${check2?.j000[1].toMap()}');
 
   ////////////////////////////////////////
 });
