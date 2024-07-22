@@ -17,6 +17,7 @@ T _button00 = T("00", onTap: (BuildContext context) async {
   check.r000 = 3.14;
   check.l000 = ["apple", "banana", "cherry"];
   check.c000 = Sub()..s000 = "apple";
+  check.t000 = DateTime.now();
   check.m000 = {
     "apple": "red",
     "banana": "yellow",
