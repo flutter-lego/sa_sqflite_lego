@@ -8,8 +8,11 @@ import '../../../../../../../main.dart';
 import 'dart:convert';
 import 'package:path/path.dart';
 
-class New {
-  New() {
+import '../../data_class_example/sub.dart';
+import '../../enum_example/enum_test.dart';
+
+class Check {
+  Check() {
     docId = randomString(10); // select your docId generation method
   }
 
@@ -114,7 +117,7 @@ class New {
   // String s097 = "";
   // String s098 = "";
   // String s099 = "";
-  // int i000 = 0;
+  int i000 = 0;
   // int i001 = 0;
   // int i002 = 0;
   // int i003 = 0;
@@ -214,7 +217,7 @@ class New {
   // int i097 = 0;
   // int i098 = 0;
   // int i099 = 0;
-  // bool b000 = false;
+  bool b000 = false;
   // bool b001 = false;
   // bool b002 = false;
   // bool b003 = false;
@@ -245,7 +248,7 @@ class New {
   // bool b028 = false;
   // bool b029 = false;
   // bool b030 = false;
-  // num r000 = 0;
+  num r000 = 0;
   // num r001 = 0;
   // num r002 = 0;
   // num r003 = 0;
@@ -276,7 +279,7 @@ class New {
   // num r028 = 0;
   // num r029 = 0;
   // num r030 = 0;
-  // DateTime t000 = DateTime.fromMillisecondsSinceEpoch(0);
+  DateTime t000 = DateTime.fromMillisecondsSinceEpoch(0);
   // DateTime t001 = DateTime.fromMillisecondsSinceEpoch(0);
   // DateTime t002 = DateTime.fromMillisecondsSinceEpoch(0);
   // DateTime t003 = DateTime.fromMillisecondsSinceEpoch(0);
@@ -297,7 +300,7 @@ class New {
   // DateTime t018 = DateTime.fromMillisecondsSinceEpoch(0);
   // DateTime t019 = DateTime.fromMillisecondsSinceEpoch(0);
   // DateTime t020 = DateTime.fromMillisecondsSinceEpoch(0);
-  // List<dynamic> l000 = [];
+  List<dynamic> l000 = [];
   // List<dynamic> l001 = [];
   // List<dynamic> l002 = [];
   // List<dynamic> l003 = [];
@@ -318,7 +321,7 @@ class New {
   // List<dynamic> l018 = [];
   // List<dynamic> l019 = [];
   // List<dynamic> l020 = [];
-  // Map<String, dynamic> m000 = {};
+  Map<String, dynamic> m000 = {};
   // Map<String, dynamic> m001 = {};
   // Map<String, dynamic> m002 = {};
   // Map<String, dynamic> m003 = {};
@@ -339,7 +342,7 @@ class New {
   // Map<String, dynamic> m018 = {};
   // Map<String, dynamic> m019 = {};
   // Map<String, dynamic> m020 = {};
-  // OtherModel c000 = OtherModel();
+  Sub c000 = Sub();
   // OtherModel c001 = OtherModel();
   // OtherModel c002 = OtherModel();
   // OtherModel c003 = OtherModel();
@@ -360,7 +363,7 @@ class New {
   // OtherModel c018 = OtherModel();
   // OtherModel c019 = OtherModel();
   // OtherModel c020 = OtherModel();
-  // List<OtherModel> j000 = [];
+  List<Sub> j000 = [];
   // List<OtherModel> j001 = [];
   // List<OtherModel> j002 = [];
   // List<OtherModel> j003 = [];
@@ -381,7 +384,7 @@ class New {
   // List<OtherModel> j018 = [];
   // List<OtherModel> j019 = [];
   // List<OtherModel> j020 = [];
-  // SomeEnum e000 = SomeEnum.notSelected;
+  EnumTestEnum e000 = EnumTestEnum.notSelected;
   // SomeEnum e001 = SomeEnum.notSelected;
   // SomeEnum e002 = SomeEnum.notSelected;
   // SomeEnum e003 = SomeEnum.notSelected;
@@ -507,7 +510,7 @@ class New {
       // 's097': s097,
       // 's098': s098,
       // 's099': s099,
-      // 'i000': i000.toString(),
+      'i000': i000.toString(),
       // 'i001': i001.toString(),
       // 'i002': i002.toString(),
       // 'i003': i003.toString(),
@@ -607,7 +610,7 @@ class New {
       // 'i097': i097.toString(),
       // 'i098': i098.toString(),
       // 'i099': i099.toString(),
-      // 'b000': b000.toString(),
+      'b000': b000.toString(),
       // 'b001': b001.toString(),
       // 'b002': b002.toString(),
       // 'b003': b003.toString(),
@@ -638,7 +641,7 @@ class New {
       // 'b028': b028.toString(),
       // 'b029': b029.toString(),
       // 'b030': b030.toString(),
-      // 'r000': r000.toString(),
+      'r000': r000.toString(),
       // 'r001': r001.toString(),
       // 'r002': r002.toString(),
       // 'r003': r003.toString(),
@@ -669,7 +672,7 @@ class New {
       // 'r028': r028.toString(),
       // 'r029': r029.toString(),
       // 'r030': r030.toString(),
-      // 't000': t000.millisecondsSinceEpoch.toString(),
+      't000': t000.millisecondsSinceEpoch.toString(),
       // 't001': t001.millisecondsSinceEpoch.toString(),
       // 't002': t002.millisecondsSinceEpoch.toString(),
       // 't003': t003.millisecondsSinceEpoch.toString(),
@@ -690,7 +693,7 @@ class New {
       // 't018': t018.millisecondsSinceEpoch.toString(),
       // 't019': t019.millisecondsSinceEpoch.toString(),
       // 't020': t020.millisecondsSinceEpoch.toString(),
-      // 'l000': json.encode(l000),
+      'l000': json.encode(l000),
       // 'l001': json.encode(l001),
       // 'l002': json.encode(l002),
       // 'l003': json.encode(l003),
@@ -711,7 +714,7 @@ class New {
       // 'l018': json.encode(l018),
       // 'l019': json.encode(l019),
       // 'l020': json.encode(l020),
-      // 'm000': json.encode(m000),
+      'm000': json.encode(m000),
       // 'm001': json.encode(m001),
       // 'm002': json.encode(m002),
       // 'm003': json.encode(m003),
@@ -732,7 +735,7 @@ class New {
       // 'm018': json.encode(m018),
       // 'm019': json.encode(m019),
       // 'm020': json.encode(m020),
-      // 'c000': c000.toDataString(),
+      'c000': c000.toDataString(),
       // 'c001': c001.toDataString(),
       // 'c002': c002.toDataString(),
       // 'c003': c003.toDataString(),
@@ -753,7 +756,7 @@ class New {
       // 'c018': c018.toDataString(),
       // 'c019': c019.toDataString(),
       // 'c020': c020.toDataString(),
-      // 'j000': jsonEncode(j000.map((model) => model.toDataString()).toList()),
+      'j000': jsonEncode(j000.map((model) => model.toDataString()).toList()),
       // 'j001': jsonEncode(j001.map((model) => model.toDataString()).toList()),
       // 'j002': jsonEncode(j002.map((model) => model.toDataString()).toList()),
       // 'j003': jsonEncode(j003.map((model) => model.toDataString()).toList()),
@@ -774,7 +777,7 @@ class New {
       // 'j018': jsonEncode(j018.map((model) => model.toDataString()).toList()),
       // 'j019': jsonEncode(j019.map((model) => model.toDataString()).toList()),
       // 'j020': jsonEncode(j020.map((model) => model.toDataString()).toList()),
-      // 'e000': e000.toStringValue(),
+      'e000': e000.toStringValue(),
       // 'e001': e001.toStringValue(),
       // 'e002': e002.toStringValue(),
       // 'e003': e003.toStringValue(),
@@ -799,10 +802,10 @@ class New {
     }).query));
   }
 
-  static New fromDataString(String dataString) {
+  static Check fromDataString(String dataString) {
     Map<String, String> queryParams = Uri.splitQueryString(utf8.decode(base64.decode(dataString)));
 
-    New object = New();
+    Check object = Check();
 
     object.s000 = queryParams["s000"] ?? "";
     // object.s001 = queryParams["s001"] ?? "";
@@ -904,7 +907,7 @@ class New {
     // object.s097 = queryParams["s097"] ?? "";
     // object.s098 = queryParams["s098"] ?? "";
     // object.s099 = queryParams["s099"] ?? "";
-    // object.i000 = int.tryParse(queryParams["i000"] ?? "0") ?? 0;
+    object.i000 = int.tryParse(queryParams["i000"] ?? "0") ?? 0;
     // object.i001 = int.tryParse(queryParams["i001"] ?? "0") ?? 0;
     // object.i002 = int.tryParse(queryParams["i002"] ?? "0") ?? 0;
     // object.i003 = int.tryParse(queryParams["i003"] ?? "0") ?? 0;
@@ -1004,7 +1007,7 @@ class New {
     // object.i097 = int.tryParse(queryParams["i097"] ?? "0") ?? 0;
     // object.i098 = int.tryParse(queryParams["i098"] ?? "0") ?? 0;
     // object.i099 = int.tryParse(queryParams["i099"] ?? "0") ?? 0;
-    // object.b000 = bool.tryParse(queryParams["b000"] ?? "false") ?? false;
+    object.b000 = bool.tryParse(queryParams["b000"] ?? "false") ?? false;
     // object.b001 = bool.tryParse(queryParams["b001"] ?? "false") ?? false;
     // object.b002 = bool.tryParse(queryParams["b002"] ?? "false") ?? false;
     // object.b003 = bool.tryParse(queryParams["b003"] ?? "false") ?? false;
@@ -1035,7 +1038,7 @@ class New {
     // object.b028 = bool.tryParse(queryParams["b028"] ?? "false") ?? false;
     // object.b029 = bool.tryParse(queryParams["b029"] ?? "false") ?? false;
     // object.b030 = bool.tryParse(queryParams["b030"] ?? "false") ?? false;
-    // object.r000 = num.tryParse(queryParams["r000"] ?? "0") ?? 0;
+    object.r000 = num.tryParse(queryParams["r000"] ?? "0") ?? 0;
     // object.r001 = num.tryParse(queryParams["r001"] ?? "0") ?? 0;
     // object.r002 = num.tryParse(queryParams["r002"] ?? "0") ?? 0;
     // object.r003 = num.tryParse(queryParams["r003"] ?? "0") ?? 0;
@@ -1066,7 +1069,7 @@ class New {
     // object.r028 = num.tryParse(queryParams["r028"] ?? "0") ?? 0;
     // object.r029 = num.tryParse(queryParams["r029"] ?? "0") ?? 0;
     // object.r030 = num.tryParse(queryParams["r030"] ?? "0") ?? 0;
-    // object.t000 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams["t000"] ?? "0") ?? 0);
+    object.t000 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams["t000"] ?? "0") ?? 0);
     // object.t001 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams["t001"] ?? "0") ?? 0);
     // object.t002 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams["t002"] ?? "0") ?? 0);
     // object.t003 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams["t003"] ?? "0") ?? 0);
@@ -1087,7 +1090,7 @@ class New {
     // object.t018 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams["t018"] ?? "0") ?? 0);
     // object.t019 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams["t019"] ?? "0") ?? 0);
     // object.t020 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams["t020"] ?? "0") ?? 0);
-    // object.l000 = jsonDecode(queryParams["l000"] ?? "[]");
+    object.l000 = jsonDecode(queryParams["l000"] ?? "[]");
     // object.l001 = jsonDecode(queryParams["l001"] ?? "[]");
     // object.l002 = jsonDecode(queryParams["l002"] ?? "[]");
     // object.l003 = jsonDecode(queryParams["l003"] ?? "[]");
@@ -1108,7 +1111,7 @@ class New {
     // object.l018 = jsonDecode(queryParams["l018"] ?? "[]");
     // object.l019 = jsonDecode(queryParams["l019"] ?? "[]");
     // object.l020 = jsonDecode(queryParams["l020"] ?? "[]");
-    // object.m000 = jsonDecode(queryParams["m000"] ?? "{}");
+    object.m000 = jsonDecode(queryParams["m000"] ?? "{}");
     // object.m001 = jsonDecode(queryParams["m001"] ?? "{}");
     // object.m002 = jsonDecode(queryParams["m002"] ?? "{}");
     // object.m003 = jsonDecode(queryParams["m003"] ?? "{}");
@@ -1129,7 +1132,7 @@ class New {
     // object.m018 = jsonDecode(queryParams["m018"] ?? "{}");
     // object.m019 = jsonDecode(queryParams["m019"] ?? "{}");
     // object.m020 = jsonDecode(queryParams["m020"] ?? "{}");
-    // object.c000 = OtherModel.fromDataString(queryParams["c000"] ?? OtherModel().toDataString());
+    object.c000 = Sub.fromDataString(queryParams["c000"] ?? Sub().toDataString());
     // object.c001 = OtherModel.fromDataString(queryParams['c001'] ?? OtherModel().toDataString());
     // object.c002 = OtherModel.fromDataString(queryParams['c002'] ?? OtherModel().toDataString());
     // object.c003 = OtherModel.fromDataString(queryParams['c003'] ?? OtherModel().toDataString());
@@ -1150,7 +1153,7 @@ class New {
     // object.c018 = OtherModel.fromDataString(queryParams['c018'] ?? OtherModel().toDataString());
     // object.c019 = OtherModel.fromDataString(queryParams['c019'] ?? OtherModel().toDataString());
     // object.c020 = OtherModel.fromDataString(queryParams['c020'] ?? OtherModel().toDataString());
-    // object.j000 = List<String>.from(json.decode(queryParams['j000'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
+    object.j000 = List<String>.from(json.decode(queryParams['j000'] ?? "[]") ?? []).map((item) => Sub.fromDataString(item)).toList();
     // object.j001 = List<String>.from(json.decode(queryParams['j001'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
     // object.j002 = List<String>.from(json.decode(queryParams['j002'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
     // object.j003 = List<String>.from(json.decode(queryParams['j003'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
@@ -1171,7 +1174,7 @@ class New {
     // object.j018 = List<String>.from(json.decode(queryParams['j018'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
     // object.j019 = List<String>.from(json.decode(queryParams['j019'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
     // object.j020 = List<String>.from(json.decode(queryParams['j020'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
-    // object.e000 = SomeEnum.fromString(queryParams["e000"] ?? SomeEnum.notSelected.toStringValue());
+    object.e000 = EnumTestEnum.fromString(queryParams["e000"] ?? EnumTestEnum.notSelected.toStringValue());
     // object.e001 = SomeEnum.fromString(queryParams["e001"] ?? SomeEnum.notSelected.toStringValue());
     // object.e002 = SomeEnum.fromString(queryParams["e002"] ?? SomeEnum.notSelected.toStringValue());
     // object.e003 = SomeEnum.fromString(queryParams["e003"] ?? SomeEnum.notSelected.toStringValue());
@@ -1301,7 +1304,7 @@ class New {
     // map["s097"] = s097;
     // map["s098"] = s098;
     // map["s099"] = s099;
-    // map["i000"] = i000;
+    map["i000"] = i000;
     // map["i001"] = i001;
     // map["i002"] = i002;
     // map["i003"] = i003;
@@ -1401,7 +1404,7 @@ class New {
     // map["i097"] = i097;
     // map["i098"] = i098;
     // map["i099"] = i099;
-    // map["b000"] = b000 ? 1 : 0;
+    map["b000"] = b000 ? 1 : 0;
     // map["b001"] = b001 ? 1 : 0;
     // map["b002"] = b002 ? 1 : 0;
     // map["b003"] = b003 ? 1 : 0;
@@ -1432,7 +1435,7 @@ class New {
     // map["b028"] = b028 ? 1 : 0;
     // map["b029"] = b029 ? 1 : 0;
     // map["b030"] = b030 ? 1 : 0;
-    // map["r000"] = r000;
+    map["r000"] = r000;
     // map["r001"] = r001;
     // map["r002"] = r002;
     // map["r003"] = r003;
@@ -1463,7 +1466,7 @@ class New {
     // map["r028"] = r028;
     // map["r029"] = r029;
     // map["r030"] = r030;
-    // map["t000"] = t000.millisecondsSinceEpoch;
+    map["t000"] = t000.millisecondsSinceEpoch;
     // map["t001"] = t001.millisecondsSinceEpoch;
     // map["t002"] = t002.millisecondsSinceEpoch;
     // map["t003"] = t003.millisecondsSinceEpoch;
@@ -1484,7 +1487,7 @@ class New {
     // map["t018"] = t018.millisecondsSinceEpoch;
     // map["t019"] = t019.millisecondsSinceEpoch;
     // map["t020"] = t020.millisecondsSinceEpoch;
-    // map["l000"] = jsonEncode(l000);
+    map["l000"] = jsonEncode(l000);
     // map["l001"] = jsonEncode(l001);
     // map["l002"] = jsonEncode(l002);
     // map["l003"] = jsonEncode(l003);
@@ -1505,7 +1508,7 @@ class New {
     // map["l018"] = jsonEncode(l018);
     // map["l019"] = jsonEncode(l019);
     // map["l020"] = jsonEncode(l020);
-    // map["m000"] = jsonEncode(m000);
+    map["m000"] = jsonEncode(m000);
     // map["m001"] = jsonEncode(m001);
     // map["m002"] = jsonEncode(m002);
     // map["m003"] = jsonEncode(m003);
@@ -1526,7 +1529,7 @@ class New {
     // map["m018"] = jsonEncode(m018);
     // map["m019"] = jsonEncode(m019);
     // map["m020"] = jsonEncode(m020);
-    // map["c000"] = c000.toDataString();
+    map["c000"] = c000.toDataString();
     // map["c001"] = c001.toDataString();
     // map["c002"] = c002.toDataString();
     // map["c003"] = c003.toDataString();
@@ -1547,7 +1550,7 @@ class New {
     // map["c018"] = c018.toDataString();
     // map["c019"] = c019.toDataString();
     // map["c020"] = c020.toDataString();
-    // map["j000"] = jsonEncode(j000.map((model) => model.toDataString()).toList());
+    map["j000"] = jsonEncode(j000.map((model) => model.toDataString()).toList());
     // map["j001"] = jsonEncode(j001.map((model) => model.toDataString()).toList());
     // map["j002"] = jsonEncode(j002.map((model) => model.toDataString()).toList());
     // map["j003"] = jsonEncode(j003.map((model) => model.toDataString()).toList());
@@ -1568,7 +1571,7 @@ class New {
     // map["j018"] = jsonEncode(j018.map((model) => model.toDataString()).toList());
     // map["j019"] = jsonEncode(j019.map((model) => model.toDataString()).toList());
     // map["j020"] = jsonEncode(j020.map((model) => model.toDataString()).toList());
-    // map["e000"] = e000.toStringValue();
+    map["e000"] = e000.toStringValue();
     // map["e001"] = e001.toStringValue();
     // map["e002"] = e002.toStringValue();
     // map["e003"] = e003.toStringValue();
@@ -1595,8 +1598,8 @@ class New {
     return map;
   }
 
-  static New fromMap(Map<dynamic, dynamic> queryParams) {
-    New object = New();
+  static Check fromMap(Map<dynamic, dynamic> queryParams) {
+    Check object = Check();
 
     object.s000 = queryParams["s000"] ?? "";
     // object.s001 = queryParams["s001"] ?? "";
@@ -1698,7 +1701,7 @@ class New {
     // object.s097 = queryParams["s097"] ?? "";
     // object.s098 = queryParams["s098"] ?? "";
     // object.s099 = queryParams["s099"] ?? "";
-    // object.i000 = queryParams["i000"] ?? 0;
+    object.i000 = queryParams["i000"] ?? 0;
     // object.i001 = queryParams["i001"] ?? 0;
     // object.i002 = queryParams["i002"] ?? 0;
     // object.i003 = queryParams["i003"] ?? 0;
@@ -1798,7 +1801,7 @@ class New {
     // object.i097 = queryParams["i097"] ?? 0;
     // object.i098 = queryParams["i098"] ?? 0;
     // object.i099 = queryParams["i099"] ?? 0;
-    // object.b000 = queryParams["b000"] == 1;
+    object.b000 = queryParams["b000"] == 1;
     // object.b001 = queryParams["b001"] == 1;
     // object.b002 = queryParams["b002"] == 1;
     // object.b003 = queryParams["b003"] == 1;
@@ -1829,7 +1832,7 @@ class New {
     // object.b028 = queryParams["b028"] == 1;
     // object.b029 = queryParams["b029"] == 1;
     // object.b030 = queryParams["b030"] == 1;
-    // object.r000 = queryParams["r000"] ?? 0;
+    object.r000 = queryParams["r000"] ?? 0;
     // object.r001 = queryParams["r001"] ?? 0;
     // object.r002 = queryParams["r002"] ?? 0;
     // object.r003 = queryParams["r003"] ?? 0;
@@ -1860,7 +1863,7 @@ class New {
     // object.r028 = queryParams["r028"] ?? 0;
     // object.r029 = queryParams["r029"] ?? 0;
     // object.r030 = queryParams["r030"] ?? 0;
-    // object.t000 = DateTime.fromMillisecondsSinceEpoch(queryParams["t000"] ?? 0);
+    object.t000 = DateTime.fromMillisecondsSinceEpoch(queryParams["t000"] ?? 0);
     // object.t001 = DateTime.fromMillisecondsSinceEpoch(queryParams["t001"] ?? 0);
     // object.t002 = DateTime.fromMillisecondsSinceEpoch(queryParams["t002"] ?? 0);
     // object.t003 = DateTime.fromMillisecondsSinceEpoch(queryParams["t003"] ?? 0);
@@ -1881,7 +1884,7 @@ class New {
     // object.t018 = DateTime.fromMillisecondsSinceEpoch(queryParams["t018"] ?? 0);
     // object.t019 = DateTime.fromMillisecondsSinceEpoch(queryParams["t019"] ?? 0);
     // object.t020 = DateTime.fromMillisecondsSinceEpoch(queryParams["t020"] ?? 0);
-    // object.l000 = jsonDecode(queryParams["l000"] ?? "[]");
+    object.l000 = jsonDecode(queryParams["l000"] ?? "[]");
     // object.l001 = jsonDecode(queryParams["l001"] ?? "[]");
     // object.l002 = jsonDecode(queryParams["l002"] ?? "[]");
     // object.l003 = jsonDecode(queryParams["l003"] ?? "[]");
@@ -1902,7 +1905,7 @@ class New {
     // object.l018 = jsonDecode(queryParams["l018"] ?? "[]");
     // object.l019 = jsonDecode(queryParams["l019"] ?? "[]");
     // object.l020 = jsonDecode(queryParams["l020"] ?? "[]");
-    // object.m000 = jsonDecode(queryParams["m000"] ?? "{}");
+    object.m000 = jsonDecode(queryParams["m000"] ?? "{}");
     // object.m001 = jsonDecode(queryParams["m001"] ?? "{}");
     // object.m002 = jsonDecode(queryParams["m002"] ?? "{}");
     // object.m003 = jsonDecode(queryParams["m003"] ?? "{}");
@@ -1923,7 +1926,7 @@ class New {
     // object.m018 = jsonDecode(queryParams["m018"] ?? "{}");
     // object.m019 = jsonDecode(queryParams["m019"] ?? "{}");
     // object.m020 = jsonDecode(queryParams["m020"] ?? "{}");
-    // object.c000 = OtherModel.fromDataString(queryParams["c000"] ?? OtherModel().toDataString());
+    object.c000 = Sub.fromDataString(queryParams["c000"] ?? Sub().toDataString());
     // object.c001 = OtherModel.fromDataString(queryParams['c001'] ?? OtherModel().toDataString());
     // object.c002 = OtherModel.fromDataString(queryParams['c002'] ?? OtherModel().toDataString());
     // object.c003 = OtherModel.fromDataString(queryParams['c003'] ?? OtherModel().toDataString());
@@ -1944,7 +1947,7 @@ class New {
     // object.c018 = OtherModel.fromDataString(queryParams['c018'] ?? OtherModel().toDataString());
     // object.c019 = OtherModel.fromDataString(queryParams['c019'] ?? OtherModel().toDataString());
     // object.c020 = OtherModel.fromDataString(queryParams['c020'] ?? OtherModel().toDataString());
-    // object.j000 = List<String>.from(json.decode(queryParams['j000'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
+    object.j000 = List<String>.from(json.decode(queryParams['j000'] ?? "[]") ?? []).map((item) => Sub.fromDataString(item)).toList();
     // object.j001 = List<String>.from(json.decode(queryParams['j001'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
     // object.j002 = List<String>.from(json.decode(queryParams['j002'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
     // object.j003 = List<String>.from(json.decode(queryParams['j003'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
@@ -1965,7 +1968,7 @@ class New {
     // object.j018 = List<String>.from(json.decode(queryParams['j018'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
     // object.j019 = List<String>.from(json.decode(queryParams['j019'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
     // object.j020 = List<String>.from(json.decode(queryParams['j020'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
-    // object.e000 = SomeEnum.fromString(queryParams["e000"] ?? SomeEnum.notSelected.toStringValue());
+    object.e000 = EnumTestEnum.fromString(queryParams["e000"] ?? EnumTestEnum.notSelected.toStringValue());
     // object.e001 = SomeEnum.fromString(queryParams["e001"] ?? SomeEnum.notSelected.toStringValue());
     // object.e002 = SomeEnum.fromString(queryParams["e002"] ?? SomeEnum.notSelected.toStringValue());
     // object.e003 = SomeEnum.fromString(queryParams["e003"] ?? SomeEnum.notSelected.toStringValue());
@@ -1993,7 +1996,7 @@ class New {
   }
 }
 
-var _paramListNewModel = [
+var _paramListCheckModel = [
   ["s000", "S", "''"],
   // ["s001", "S", "''"],
   // ["s002", "S", "''"],
@@ -2094,7 +2097,7 @@ var _paramListNewModel = [
   // ["s097", "S", "''"],
   // ["s098", "S", "''"],
   // ["s099", "S", "''"],
-  // ["i000", "I", "0"],
+  ["i000", "I", "0"],
   // ["i001", "I", "0"],
   // ["i002", "I", "0"],
   // ["i003", "I", "0"],
@@ -2194,7 +2197,7 @@ var _paramListNewModel = [
   // ["i097", "I", "0"],
   // ["i098", "I", "0"],
   // ["i099", "I", "0"],
-  // ["b000", "B", "0"],
+  ["b000", "B", "0"],
   // ["b001", "B", "0"],
   // ["b002", "B", "0"],
   // ["b003", "B", "0"],
@@ -2225,7 +2228,7 @@ var _paramListNewModel = [
   // ["b028", "B", "0"],
   // ["b029", "B", "0"],
   // ["b030", "B", "0"],
-  // ["r000", "D", "0"],
+  ["r000", "D", "0"],
   // ["r001", "D", "0"],
   // ["r002", "D", "0"],
   // ["r003", "D", "0"],
@@ -2256,7 +2259,7 @@ var _paramListNewModel = [
   // ["r028", "D", "0"],
   // ["r029", "D", "0"],
   // ["r030", "D", "0"],
-  // ["t000", "T", "0"],
+  ["t000", "T", "0"],
   // ["t001", "T", "0"],
   // ["t002", "T", "0"],
   // ["t003", "T", "0"],
@@ -2277,7 +2280,7 @@ var _paramListNewModel = [
   // ["t018", "T", "0"],
   // ["t019", "T", "0"],
   // ["t020", "T", "0"],
-  // ["l000", "L", "'[]'"],
+  ["l000", "L", "'[]'"],
   // ["l001", "L", "'[]'"],
   // ["l002", "L", "'[]'"],
   // ["l003", "L", "'[]'"],
@@ -2298,7 +2301,7 @@ var _paramListNewModel = [
   // ["l018", "L", "'[]'"],
   // ["l019", "L", "'[]'"],
   // ["l020", "L", "'[]'"],
-  // ["m000", "M", "'{}'"],
+  ["m000", "M", "'{}'"],
   // ["m001", "M", "'{}'"],
   // ["m002", "M", "'{}'"],
   // ["m003", "M", "'{}'"],
@@ -2319,7 +2322,7 @@ var _paramListNewModel = [
   // ["m018", "M", "'{}'"],
   // ["m019", "M", "'{}'"],
   // ["m020", "M", "'{}'"],
-  // ["c000", "C","'${(SomeModel().toDataString())}'"],
+  ["c000", "C","'${(Sub().toDataString())}'"],
   // ["c001", "C","'${(SomeModel().toDataString())}'"],
   // ["c002", "C","'${(SomeModel().toDataString())}'"],
   // ["c003", "C","'${(SomeModel().toDataString())}'"],
@@ -2340,7 +2343,7 @@ var _paramListNewModel = [
   // ["c018", "C","'${(SomeModel().toDataString())}'"],
   // ["c019", "C","'${(SomeModel().toDataString())}'"],
   // ["c020", "C","'${(SomeModel().toDataString())}'"],
-  // ["j000", "J","'[]'"],
+  ["j000", "J","'[]'"],
   // ["j001", "J","'[]'"],
   // ["j002", "J","'[]'"],
   // ["j003", "J","'[]'"],
@@ -2361,7 +2364,7 @@ var _paramListNewModel = [
   // ["j018", "J","'[]'"],
   // ["j019", "J","'[]'"],
   // ["j020", "J","'[]'"],
-  // ["e000", "E","'${SomeEnum.notSelected.toStringValue()}'"],
+  ["e000", "E","'${EnumTestEnum.notSelected.toStringValue()}'"],
   // ["e001", "E","'${SomeEnum.notSelected.toStringValue()}'"],
   // ["e002", "E","'${SomeEnum.notSelected.toStringValue()}'"],
   // ["e003", "E","'${SomeEnum.notSelected.toStringValue()}'"],
@@ -2386,75 +2389,75 @@ var _paramListNewModel = [
   ["docId", "string"]
 ];
 
-class NewSqlite {
-  Future<New?> get(String docId) async {
+class CheckSqlite {
+  Future<Check?> get(String docId) async {
     await _ready();
-    List<Map> maps = await _NewModelDb.query('NewModel',
+    List<Map> maps = await _CheckModelDb.query('CheckModel',
         // columns: [_columnId, s1, s2],
         where: 'docId = ?',
         whereArgs: [docId]);
     if (maps.isNotEmpty) {
-      return New.fromMap(maps.first);
+      return Check.fromMap(maps.first);
     }
     return null;
   }
 
-  Future<List<New>> getAll() async {
+  Future<List<Check>> getAll() async {
     await _ready();
 
-    List<Map> maps = await _NewModelDb.query('NewModel');
-    List<New> result = [];
+    List<Map> maps = await _CheckModelDb.query('CheckModel');
+    List<Check> result = [];
 
     if (maps.isNotEmpty) {
       for (var element in maps) {
-        result.add(New.fromMap(element));
+        result.add(Check.fromMap(element));
       }
       return result;
     }
     return [];
   }
 
-  Future<void> upsert(New newObject) async {
-    var oldObject = await get(newObject.docId);
+  Future<void> upsert(Check CheckObject) async {
+    var oldObject = await get(CheckObject.docId);
 
     if (oldObject != null) {
-      await update(newObject, oldObject);
+      await update(CheckObject, oldObject);
     } else {
-      await insert(newObject);
+      await insert(CheckObject);
     }
   }
 
-  insertBulk(List<New> objects) async {
-    Batch batch = _NewModelDb.batch();
+  insertBulk(List<Check> objects) async {
+    Batch batch = _CheckModelDb.batch();
 
     // for loop with index
     for (var i = 0; i < objects.length; i++) {
       var element = objects[i];
-      batch.insert('NewModel', element.toMap());
+      batch.insert('CheckModel', element.toMap());
     }
 
     await batch.commit(noResult: true);
   }
 
-  Future<int> insert(New object) async {
+  Future<int> insert(Check object) async {
     await _ready();
 
-    return await _NewModelDb.insert('NewModel', object.toMap());
+    return await _CheckModelDb.insert('CheckModel', object.toMap());
   }
 
-  Future<int> update(New object, New oldObject) async {
+  Future<int> update(Check object, Check oldObject) async {
     await _ready();
 
-    return await _NewModelDb.update('NewModel', object.toMap(),
+    return await _CheckModelDb.update('CheckModel', object.toMap(),
         where: 'docId = ?', whereArgs: [oldObject.docId]);
   }
 
   ///////////////////////////////////////
-  static late Database _NewModelDb;
+  static late Database _CheckModelDb;
 
   static bool _isOpened = false;
   static bool _isDbOpened = false;
-  static const String _dbName = "NewModel.db";
+  static const String _dbName = "CheckModel.db";
 
   _ready() async {
     if (!_isOpened) {
@@ -2465,11 +2468,11 @@ class NewSqlite {
 
   Future _open() async {
     await _prepare();
-    await _NewModelDb.transaction((txn) async {
-      String createTableQuery = "create table if not exists NewModel ("
+    await _CheckModelDb.transaction((txn) async {
+      String createTableQuery = "create table if not exists CheckModel ("
           "docId text primary key not null";
 
-      for (var item in _paramListNewModel) {
+      for (var item in _paramListCheckModel) {
         if (item[0] == "docId") continue;
 
         createTableQuery += ",${item[0]} ${_convertToColumnType(item[1])} not null";
@@ -2483,7 +2486,7 @@ class NewSqlite {
 
     await _handleColumnChanged();
 
-    await _createIndexing(_NewModelDb);
+    await _createIndexing(_CheckModelDb);
   }
 
   String _convertToColumnType(String type) {
@@ -2514,22 +2517,22 @@ class NewSqlite {
   }
 
   _handleColumnChanged() async {
-    var _ = _ManagingSqliteTableNewModel().get();
+    var _ = _ManagingSqliteTableCheckModel().get();
 
-    var columns = _paramListNewModel.map((e) => e[0].toString()).toList();
+    var columns = _paramListCheckModel.map((e) => e[0].toString()).toList();
     if (_.UpdateMillis == 0) {
       // if it is the first time, just insert the columns to the table
       _.Version = 1;
       _.UpdateMillis = DateTime.now().millisecondsSinceEpoch;
       _.Columns = columns;
-      _ManagingSqliteTableNewModel().upsert(_);
+      _ManagingSqliteTableCheckModel().upsert(_);
     }
 
-    // compare with existing columns (delete the missing ones and add the new ones)
+    // compare with existing columns (delete the missing ones and add the Check ones)
     // list of parameters that are only in the existing one (i.e. parts to be deleted)
     var needDeleteParams = _.Columns.where((item) => !columns.contains(item)).toList();
 
-    // list of parameters that are only in the new one (i.e. parts to be added)
+    // list of parameters that are only in the Check one (i.e. parts to be added)
     var needCreateParams = columns.where((item) => !_.Columns.contains(item)).toList();
 
     // process to update db version when there is any change in columns
@@ -2537,12 +2540,12 @@ class NewSqlite {
       _.Version++;
       _.UpdateMillis = DateTime.now().millisecondsSinceEpoch;
       _.Columns = columns;
-      _ManagingSqliteTableNewModel().upsert(_);
+      _ManagingSqliteTableCheckModel().upsert(_);
     }
 
     // process to add columns
     for (var item in needCreateParams) {
-      var param = _paramListNewModel.firstWhere((element) => element[0] == item);
+      var param = _paramListCheckModel.firstWhere((element) => element[0] == item);
       await _addColumns(param[0], _convertToColumnType(param[1]), param[2]);
     }
 
@@ -2552,8 +2555,8 @@ class NewSqlite {
     await _prepare();
   }
 
-  _addColumns(String newColumnName, String columnType, String defaultValue) async {
-    await _NewModelDb.execute("ALTER TABLE NewModel ADD COLUMN $newColumnName $columnType DEFAULT $defaultValue");
+  _addColumns(String CheckColumnName, String columnType, String defaultValue) async {
+    await _CheckModelDb.execute("ALTER TABLE CheckModel ADD COLUMN $CheckColumnName $columnType DEFAULT $defaultValue");
   }
 
   _removeColumns(List<dynamic> columnsToDelete) async {
@@ -2562,10 +2565,10 @@ class NewSqlite {
     }
 
     // temp table name
-    String tempTableName = 'temp_NewModel';
+    String tempTableName = 'temp_CheckModel';
 
     // bring all column names from the existing table
-    List<Map> columns = await _NewModelDb.rawQuery('PRAGMA table_info(NewModel)');
+    List<Map> columns = await _CheckModelDb.rawQuery('PRAGMA table_info(CheckModel)');
     List<String> allColumnNames = columns.map((col) => col['name'] as String).toList();
 
     // exclude columns to delete
@@ -2573,18 +2576,18 @@ class NewSqlite {
     String remainingColumns = allColumnNames.join(', ');
 
     // copy data to temp table
-    await _NewModelDb.transaction((txn) async {
+    await _CheckModelDb.transaction((txn) async {
       await txn.execute('''
       CREATE TABLE $tempTableName AS 
       SELECT $remainingColumns 
-      FROM NewModel
+      FROM CheckModel
     ''');
 
       // 기존 테이블 삭제
-      await txn.execute('DROP TABLE NewModel');
+      await txn.execute('DROP TABLE CheckModel');
 
       // temp table name to original table name
-      await txn.execute('ALTER TABLE $tempTableName RENAME TO NewModel');
+      await txn.execute('ALTER TABLE $tempTableName RENAME TO CheckModel');
     });
   }
 
@@ -2593,45 +2596,45 @@ class NewSqlite {
     final databasePath = await getDatabasesPath();
     final path = join(databasePath, _dbName);
     await Directory(dirname(path)).create(recursive: true);
-    _NewModelDb = await openDatabase(path, version: _ManagingSqliteTableNewModel().get().Version);
+    _CheckModelDb = await openDatabase(path, version: _ManagingSqliteTableCheckModel().get().Version);
     _isDbOpened = true;
   }
 
   /// sql index create
   _createIndexing(Database myDatabase) async {
-    if (Orange.getBool("NewModelSqliteIndex") != null) {
+    if (Orange.getBool("CheckModelSqliteIndex") != null) {
       return;
     }
 
-    Orange.setBool("NewModelSqliteIndex", true);
+    Orange.setBool("CheckModelSqliteIndex", true);
 
     /// exapmle
-    // await myDatabase.execute("create index i000index on NewModel (i000)"); // single index
-    // await myDatabase.execute("create index i000index on NewModel (i000 DESC)"); // single index DESC
-    // await myDatabase.execute("create index s000i000index on NewModel (s000 ASC, i000 DESC)"); // composite index
+    // await myDatabase.execute("create index i000index on CheckModel (i000)"); // single index
+    // await myDatabase.execute("create index i000index on CheckModel (i000 DESC)"); // single index DESC
+    // await myDatabase.execute("create index s000i000index on CheckModel (s000 ASC, i000 DESC)"); // composite index
     // await myDatabase.execute("drop index i000index"); // index drop
   }
 }
 
-class _ManagingSqliteTableNewModel {
-  _SqliteTableNewModel get() {
-    String? json = Orange.getString('_ManagingSqliteTableNewModel');
-    if (json == null) return _SqliteTableNewModel();
+class _ManagingSqliteTableCheckModel {
+  _SqliteTableCheckModel get() {
+    String? json = Orange.getString('_ManagingSqliteTableCheckModel');
+    if (json == null) return _SqliteTableCheckModel();
 
-    return _SqliteTableNewModel.fromString(json);
+    return _SqliteTableCheckModel.fromString(json);
   }
 
-  upsert(_SqliteTableNewModel obj) {
+  upsert(_SqliteTableCheckModel obj) {
     String json = obj.toString();
-    Orange.setString('_ManagingSqliteTableNewModel', json);
+    Orange.setString('_ManagingSqliteTableCheckModel', json);
   }
 
   delete() {
-    Orange.remove('_ManagingSqliteTableNewModel');
+    Orange.remove('_ManagingSqliteTableCheckModel');
   }
 }
 
-class _SqliteTableNewModel {
+class _SqliteTableCheckModel {
   int UpdateMillis = 0;
 
   int Version = 1;
@@ -2647,9 +2650,9 @@ class _SqliteTableNewModel {
     });
   }
 
-  static _SqliteTableNewModel fromString(String jsonString) {
+  static _SqliteTableCheckModel fromString(String jsonString) {
     final data = jsonDecode(jsonString);
-    var obj = _SqliteTableNewModel();
+    var obj = _SqliteTableCheckModel();
 
     obj.UpdateMillis = data['UpdateMillis'] ?? 0;
     obj.Version = data['Version'] ?? 0;

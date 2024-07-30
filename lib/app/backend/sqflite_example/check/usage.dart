@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../../../app/backend/data_class_example/sub.dart';
-import '../../../app/backend/enum_example/enum_test.dart';
-import '../../../app/backend/sqflite_example/check/_.dart';
-import '../../../main.dart';
+import '../../../../../../main.dart';
+import '../../data_class_example/sub.dart';
+import '../../enum_example/enum_test.dart';
+import '_.dart';
 
 String _noteName = "Note";
 
