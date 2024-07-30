@@ -2425,6 +2425,7 @@ class NewSqlite {
   }
 
   insertBulk(List<New> objects) async {
+    await _ready();
     Batch batch = _NewModelDb.batch();
 
     // for loop with index
